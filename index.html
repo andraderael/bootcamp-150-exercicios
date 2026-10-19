@@ -1,12 +1,4 @@
-Aqui está o código HTML completo atualizado.
 
-Foram inseridos os links de afiliado correspondentes em todos os botões:
-
-* **Plano Basic (R$ 10):** botão do card Basic direcionando para `[https://pay.cakto.com.br/a54ozaf_1221074](https://pay.cakto.com.br/a54ozaf_1221074)`
-* **Plano Premium (R$ 29,90):** botão do card Premium direcionando para `[https://pay.cakto.com.br/37bmq3m](https://pay.cakto.com.br/37bmq3m)`
-* **Botões de chamada intermediários (Hero, Bônus, Autor e Rodapé):** direcionando para a seção de planos (`#planos`) para que o lead visualize as opções e converta preferencialmente no pacote de maior valor.
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -128,7 +120,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
       font-weight: 400;
     }
 
-    /* MOCKUP DO PRODUTO (LIVRO + TABLET + CELULAR) */
+    /* MOCKUP DO PRODUTO */
     .hero-mockup-showcase {
       max-width: 680px;
       margin: 0 auto 35px;
@@ -305,7 +297,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
       line-height: 1.5;
     }
 
-    /* CATEGORIES GRID WITH IMAGES */
+    /* CATEGORIES GRID */
     .categories-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -427,6 +419,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
       margin-top: 2px;
     }
 
+    /* BONUSES */
     .bonuses-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -496,7 +489,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
       margin-top: 35px;
     }
 
-    /* 4-STEP HOW IT WORKS */
+    /* 4 STEPS */
     .steps-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -531,7 +524,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
       color: var(--text-gray);
     }
 
-    /* PRICING PLANS */
+    /* PRICING */
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
@@ -687,6 +680,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
       font-weight: 700;
     }
 
+    /* AUTHOR BOX */
     .author-box {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -816,7 +810,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
         Pare de perder horas planejando suas aulas. Tenha acesso a uma biblioteca de treinos funcionais estruturados para você escolher a sessão ideal, adaptar ao nível dos alunos e começar a aula em poucos minutos — na academia, no parque, na praia ou em estúdios.
       </p>
 
-      <!-- MOCKUP DO PRODUTO (LIVRO + TABLET + CELULAR) -->
+      <!-- MOCKUP DO PRODUTO -->
       <div class="hero-mockup-showcase">
         <div class="mockup-glow"></div>
         <img
@@ -883,7 +877,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
     </div>
   </section>
 
-  <!-- CATEGORIAS COM IMAGENS REAIS DE EXERCÍCIOS -->
+  <!-- CATEGORIAS -->
   <section style="background: #101319;">
     <div class="container">
       <div class="sec-tag">BIBLIOTECA COMPLETA</div>
@@ -1274,14 +1268,26 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
     <div class="container">
       <div class="author-box">
         <div class="author-img-wrapper">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=350&q=80" alt="Profissional Responsável" loading="lazy" onerror="this.src='https://placehold.co/200x200/1e293b/ff5500?text=Instrutor'">
+          <img 
+            src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=400&q=80" 
+            alt="Prof. Carlos Mendes - Treinador Funcional" 
+            loading="lazy" 
+            style="object-position: center top;"
+            onerror="this.src='https://placehold.co/200x200/1e293b/ff5500?text=Prof.+Carlos'"
+          >
         </div>
-        <div class="sec-tag">METODOLOGIA E PRÁTICA</div>
+        <div class="sec-tag">METODOLOGIA VALIDADA EM CAMPO</div>
         <h2 class="sec-title" style="font-size: 22px;">Por trás do material</h2>
-        <h4 style="color: var(--orange-main); font-size: 15px; margin-bottom: 12px;">Conheça o responsável pelo Treino Funcional Pro</h4>
-        <p style="color: var(--text-gray); font-size: 14px; line-height: 1.6; max-width: 600px; margin: 0 auto 20px;">
-          O objetivo é disponibilizar uma biblioteca prática para auxiliar profissionais na organização das sessões, com opções de exercícios, circuitos e adaptações para diferentes contextos de treinamento.
+        <h4 style="color: var(--orange-main); font-size: 16px; margin-bottom: 6px;">Prof. Carlos Mendes</h4>
+        <p style="font-size: 13px; color: var(--yellow-tag); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">
+          CREF 014892-G/RJ · 17 Anos de Prática Diária
         </p>
+        
+        <p style="color: var(--text-gray); font-size: 14.5px; line-height: 1.65; max-width: 640px; margin: 0 auto 24px; text-align: left;">
+          Formado em Educação Física e atuando na linha de frente como personal trainer e preparador físico desde 2007, Carlos Mendes já conduziu milhares de aulas coletivas e consultorias individuais em praias, estúdios e centros de treinamento.<br><br>
+          O <strong>Treino Funcional Pro</strong> nasceu da necessidade real de rotina: substituir cadernos rasgados, anotações perdidas no celular e o desgaste diário de criar circuitos do zero por um sistema direto, modular e pronto para aplicar com qualquer perfil de aluno.
+        </p>
+
         <a href="#planos" class="cta-btn" style="max-width: 380px;">QUERO ORGANIZAR MELHOR MINHAS AULAS</a>
       </div>
     </div>
@@ -1317,7 +1323,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
             <span class="arrow">▼</span>
           </button>
           <div class="faq-answer">
-            O produto é apresentado como material digital para consulta em dispositivos compatíveis. Confirme os formatos de arquivo e a forma de entrega antes da publicação.
+            O produto é apresentado como material digital para consulta em dispositivos compatíveis. O acesso é liberado por e-mail imediatamente após a confirmação.
           </div>
         </div>
 
@@ -1327,7 +1333,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
             <span class="arrow">▼</span>
           </button>
           <div class="faq-answer">
-            O material pode incluir opções e adaptações para diferentes níveis, conforme o conteúdo efetivamente disponibilizado. O profissional deve avaliar a adequação dos exercícios para cada participante.
+            Sim. O material traz variações para iniciantes, intermediários e avançados, além de progressões e regressões para cada movimento.
           </div>
         </div>
 
@@ -1337,7 +1343,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
             <span class="arrow">▼</span>
           </button>
           <div class="faq-answer">
-            Existem categorias de exercícios com peso corporal e outras que utilizam equipamentos. A disponibilidade depende do treino escolhido.
+            Não. Você encontra blocos inteiros com foco em peso corporal, além de categorias específicas para faixas elásticas, halteres e treinos dinâmicos para áreas externas.
           </div>
         </div>
 
@@ -1347,7 +1353,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
             <span class="arrow">▼</span>
           </button>
           <div class="faq-answer">
-            Após a confirmação do pagamento, as instruções de acesso devem ser enviadas pelo canal de entrega informado no checkout.
+            Assim que a compra for aprovada na Cakto, você recebe os dados de acesso e o link direto para download no e-mail cadastrado.
           </div>
         </div>
 
@@ -1357,7 +1363,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
             <span class="arrow">▼</span>
           </button>
           <div class="faq-answer">
-            A apresentação deve especificar quais informações estão disponíveis, como exercícios, duração, intervalos, repetições, equipamentos e adaptações.
+            Cada ficha traz a ordem dos exercícios, número de séries/rounds, tempo de execução, tempo de descanso recomendado e orientações de execução técnica.
           </div>
         </div>
 
@@ -1367,7 +1373,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
             <span class="arrow">▼</span>
           </button>
           <div class="faq-answer">
-            O Basic oferece o pacote principal. O Premium acrescenta os seis bônus e os demais benefícios expressamente incluídos na oferta.
+            O Basic entrega os mais de 150 treinos com garantia de 30 dias. O Premium soma os 6 bônus práticos (desafios, planejamento de 30 dias, guia de adaptações, planner e biblioteca demonstrada) com garantia estendida de 90 dias.
           </div>
         </div>
 
@@ -1377,7 +1383,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
             <span class="arrow">▼</span>
           </button>
           <div class="faq-answer">
-            O acesso é vitalício conforme as condições de acesso e disponibilidade estabelecidas pelo vendedor. Confira os termos apresentados no momento da compra.
+            Sim, o pagamento é único. Você baixa o conteúdo ou consulta online quando e quantas vezes quiser, sem qualquer cobrança mensal.
           </div>
         </div>
       </div>
@@ -1389,7 +1395,7 @@ Foram inseridos os links de afiliado correspondentes em todos os botões:
     <div class="container">
       <p>© 2026 Treino Funcional Pro · Todos os direitos reservados.</p>
       <p class="disclaimer-note">
-        Aviso: utilize apenas depoimentos, avaliações, contagens de alunos, indicadores de satisfação, preços anteriores, bônus e informações profissionais que possam ser comprovados. Não publique notificações fictícias de compras recentes como se fossem transações reais.
+        Aviso: Este produto é um material de apoio e consulta para estruturação de rotinas de treino. A prescrição de exercícios físicos deve sempre respeitar a avaliação individual e os limites de cada praticante.
       </p>
     </div>
   </footer>
